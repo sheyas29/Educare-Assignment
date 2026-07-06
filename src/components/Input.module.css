@@ -1,0 +1,36 @@
+.inputField {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #CBCBCB;
+  border-radius: 6px;
+  background-color: #FFFFFF; /* Pure white background to make it stand out */
+  outline: none;
+  font: normal normal normal 13px/17px Rubik;
+  color: #1D2226;
+  padding: 0 16px; /* Comfortable padding inside the input */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField:focus {
+  border-color: #6C25FF;
+  box-shadow: 0 0 0 2px rgba(108, 37, 255, 0.15); /* Premium focus ring */
+}
+
+/* Custom placeholder styling to look clean and neat */
+.inputField::placeholder {
+  color: #1D2226;
+  opacity: 0.4;
+  font-weight: 400;
+}
+
+.label {
+  position: absolute;
+  top: -8px; /* Perfectly centered on the top border line */
+  left: 14px;
+  background-color: #FFFFFF; /* Matches input bg to create a clean gap in the border */
+  padding: 0 6px; /* Comfortably clears the cut border line on the sides */
+  font: normal normal normal 13px/17px Rubik;
+  line-height: 1;
+  pointer-events: none; /* Let clicks pass directly through to the input */
+  white-space: nowrap;
+}

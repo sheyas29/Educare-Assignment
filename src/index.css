@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #ffffff;
+  /* Light grey to match Adobe XD workspace pasteboard */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  /* Prevent desktop scrolling */
+}
+
+/* Base button reset */
+button {
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  font-family: 'Rubik', sans-serif;
+  outline: none;
+}
+
+/* Hide scrollbar for a cleaner mobile look */
+::-webkit-scrollbar {
+  display: none;
+}

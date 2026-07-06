@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.heading {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 188px;
+  height: 69px;
+  text-align: left;
+  font: normal normal 500 28px/36px Rubik;
+  letter-spacing: 0px;
+  color: #1D2226;
+  margin: 0;
+}
+
+.agencyLabel {
+  position: absolute;
+  top: 474px;
+  left: 20px;
+  width: 200px;
+  height: 15px;
+  text-align: left;
+  font: normal normal 400 13px/17px Rubik;
+  letter-spacing: 0px;
+  color: #1D2226;
+  white-space: nowrap;
+}
+
+.radioGroup {
+  position: absolute;
+  top: 499px;
+  left: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.radioCircle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.2s ease;
+}
+
+.radioInner {
+  width: 12px;
+  height: 12px;
+  background: #6C25FF;
+  border-radius: 50%;
+}
+
+.radioText {
+  font: normal normal 400 14px/17px Rubik;
+  color: #1D2226;
+}
+
+.btnSubmit {
+  position: absolute;
+  top: 736px;
+  left: 20px;
+  width: 335px;
+  height: 46px;
+  background: #6C25FF;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font: normal normal 500 16px/17px Rubik;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.btnSubmit:hover {
+  background: #561dcc;
+}
