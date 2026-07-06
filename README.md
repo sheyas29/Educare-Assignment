@@ -30,23 +30,31 @@
 ---
 
 ## 📁 Directory Structure
-
 The project directory has been organized cleanly, adhering to professional standards:
 
 ```text
 react-assignment/
-├── public/                 # Static assets
+├── public/                 # Static assets (Favicon, etc.)
 └── src/
-    ├── components/
-    │   ├── Input.jsx           # Reusable floating-label input component
-    │   └── MobileContainer.jsx # Device mockup wrapper with scale-to-fit logic
-    ├── pages/
-    │   ├── Welcome.jsx         # Landing page (Welcome to PopX)
-    │   ├── Login.jsx           # Account Sign-In
-    │   ├── Signup.jsx          # Account Registration (with Agency radio buttons)
-    │   └── AccountSettings.jsx # User Profile / Settings
+    ├── assets/             # Local mockup assets
+    │   ├── Ellipse 114/    # Avatar image assets
+    │   └── Group 1585.svg  # Camera overlay icon SVG
+    ├── components/         # Reusable UI components
+    │   ├── Input.jsx
+    │   ├── Input.module.css
+    │   ├── MobileContainer.jsx
+    │   └── MobileContainer.module.css
+    ├── pages/              # App screen components
+    │   ├── Welcome.jsx
+    │   ├── Welcome.module.css
+    │   ├── Login.jsx
+    │   ├── Login.module.css
+    │   ├── Signup.jsx
+    │   ├── Signup.module.css
+    │   ├── AccountSettings.jsx
+    │   └── AccountSettings.module.css
     ├── App.jsx             # React Router route configuration
-    ├── index.css           # Global resets and CSS variables
+    ├── index.css           # Global resets and custom body styling
     └── main.jsx            # React root mount entry point
 ```
 
