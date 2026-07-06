@@ -1,6 +1,6 @@
 # PopX Mobile App Simulator (React JS)
 
-A pixel-perfect recreation of the PopX mobile design built using **React JS** for the **React JS - Intern/Fresher** qualifying interview assignment.
+A pixel-perfect recreation of the PopX mobile design built using **React JS**.
 
 ## 🚀 Live Demo & Repository
 - **Public GitHub Repository:** `[Insert your public GitHub repo URL here]`
@@ -50,18 +50,10 @@ react-assignment/
 ### 1. Border-Intersecting Labels
 Instead of using complex absolute positioned layers that rely on matching background colors (which can break if input background states change), the `Input` component uses standard HTML `<fieldset>` and `<legend>` tags. This naturally forces a gap in the border where the label text is placed, mirroring the Adobe XD mockup.
 
-### 2. No-Scroll Mobile Centering
+### 2. No-Scroll Mobile centering
 To achieve the user requirement where *“the mobile App interface is centered on the webpage and isn't scrollabely long”*, `MobileContainer.jsx` detects the window size via a resize listener. If the viewport height is less than `852px` (including margin), it calculates a ratio and applies a CSS `transform: scale(scale)` wrapper. 
 
 Additionally, the outer flexbox wrapper resizes its own dimensions to `375 * scale` and `812 * scale`. This prevents CSS alignment issues where scaled elements overflow the top of the browser screen and get cropped.
-
-### 3. Navigation & Interaction Flow
-The transitions between screens mimic the exact navigation triggers specified in the Adobe XD prototype:
-- **Welcome Screen:** "Create Account" navigates to the Signup page, and "Already Registered? Login" navigates to the Login page.
-- **Login Screen:** The "Login" button navigates directly to the Account Settings page.
-- **Signup Screen:** The "Create Account" button navigates directly to the Account Settings page.
-
-*Note: Since this is a frontend UI mockup qualifying task, full authentication logic (like database calls or validation checks) is bypassed. The buttons trigger routing directly so that the evaluator can review all four screens and their layout implementations seamlessly.*
 
 ---
 
