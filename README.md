@@ -1,10 +1,21 @@
 # PopX Mobile App Simulator (React JS)
 
-A pixel-perfect recreation of the PopX mobile design built using **React JS**.
+A pixel-perfect recreation of the PopX mobile design built using **React JS** for the **React JS - Intern/Fresher** qualifying interview assignment.
+
+---
+
+## 📋 Problem Statement
+* **Objective:** Reconstruct the four primary screens (Welcome, Login, Signup, and Account Settings) of the "PopX" mobile application in React JS, ensuring exact design consistency with the Adobe XD blueprints.
+* **Pixel-Perfection:** Replicate all visual components using precise coordinates, padding, margins, shadows, and exact hex colors (such as `#F7F8F9` background, `#6C25FF` primary purple, and `#1D2226` body text).
+* **Device Simulation:** Center the mobile app UI on the desktop screen, simulating a standard mobile viewport (`375px` width x `812px` height) as a flat, distraction-free container.
+* **No-Scroll Constraints:** Prevent browser-level desktop scrollbars. The interface must dynamically scale down on smaller viewport heights (like laptop screens) without cropping or clipping the top and bottom of the app layout.
+* **Seamless Navigation:** Implement client-side routing between mock screens that mirrors the prototype flow while keeping the project structure clean, modular, and optimized.
+
+---
 
 ## 🚀 Live Demo & Repository
-- **Public GitHub Repository:** `[Insert your public GitHub repo URL here]`
-- **Hosted Link:** `[Insert your hosted Netlify/Vercel URL here]`
+- **Public GitHub Repository:** [sheyas29/Educare-Assignment](https://github.com/sheyas29/Educare-Assignment)
+- **Hosted Link:** [educare-assignment-kohl.vercel.app](https://educare-assignment-kohl.vercel.app/)
 
 ---
 
@@ -54,6 +65,14 @@ Instead of using complex absolute positioned layers that rely on matching backgr
 To achieve the user requirement where *“the mobile App interface is centered on the webpage and isn't scrollabely long”*, `MobileContainer.jsx` detects the window size via a resize listener. If the viewport height is less than `852px` (including margin), it calculates a ratio and applies a CSS `transform: scale(scale)` wrapper. 
 
 Additionally, the outer flexbox wrapper resizes its own dimensions to `375 * scale` and `812 * scale`. This prevents CSS alignment issues where scaled elements overflow the top of the browser screen and get cropped.
+
+### 3. Navigation & Interaction Flow
+The transitions between screens mimic the exact navigation triggers specified in the Adobe XD prototype:
+- **Welcome Screen:** "Create Account" navigates to the Signup page, and "Already Registered? Login" navigates to the Login page.
+- **Login Screen:** The "Login" button navigates directly to the Account Settings page.
+- **Signup Screen:** The "Create Account" button navigates directly to the Account Settings page.
+
+*Note: Since this is a frontend UI mockup qualifying task, full authentication logic (like database calls or validation checks) is bypassed. The buttons trigger routing directly so that the evaluator can review all four screens and their layout implementations seamlessly.*
 
 ---
 
