@@ -30,6 +30,7 @@
 ---
 
 ## 📁 Directory Structure
+
 The project directory has been organized cleanly, adhering to professional standards:
 
 ```text
@@ -64,7 +65,7 @@ react-assignment/
 
 - **Core:** React JS (Scaffolded using Vite for optimal build size and speed)
 - **Routing:** React Router DOM (v6)
-- **Styling:** Vanilla CSS (Inline React styles and global index.css reset for exact styling control)
+- **Styling:** Vanilla CSS
 
 ---
 
